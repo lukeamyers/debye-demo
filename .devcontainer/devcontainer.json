@@ -1,0 +1,19 @@
+{
+  "name": "My Codespace with Conda",
+  "image": "mcr.microsoft.com/devcontainers/base:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/conda:1": {
+      "installAnaconda": false, 
+      "version": "latest"
+    }
+  },
+  "postCreateCommand": "conda env create -f environment.yml && conda init bash && echo 'conda activate myenv' >> ~/.bashrc",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  }
+}
