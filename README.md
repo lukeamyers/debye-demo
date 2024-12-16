@@ -1,2 +1,2 @@
 # debye-demo
-Demo for the debye model calculations.
+Demo for debye model calculations.
